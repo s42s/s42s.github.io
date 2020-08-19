@@ -48,7 +48,7 @@ var u=location.href.split("://");u.splice(0,1);
 u=u.join('').split('/');u.splice(0,1);u.join('');
 var dby=document.body;
 if(u.indexOf('topar/')==0){
-let url="https://shc7432.github.io/"+u.replace('topar/','');
+let url="https://shc7432.github.io/"+u.replace('p/','');
 dby.innerHTML="Please wait...";
 location.href=url;
 return !!1;
