@@ -35,7 +35,7 @@ function getRandom(min, max) {
 </head>
 <body>
 
-<h1>404 Not Found</h1>
+<h1>404 - File Not Found</h1>
 
 <div>
 You may need to... <a href="javascript:window.history.back();">Go back</a> or 
@@ -47,7 +47,7 @@ You may need to... <a href="javascript:window.history.back();">Go back</a> or
 var u=location.href.split("://");u.splice(0,1);
 u=u.join('').split('/');u.splice(0,1);u.join('');
 var dby=document.body;
-if(u.indexOf('topar/')==0){
+if(u.indexOf('p/')==0){
 let url="https://shc7432.github.io/"+u.replace('p/','');
 dby.innerHTML="Please wait...";
 location.href=url;
