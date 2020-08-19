@@ -43,7 +43,7 @@ You may need to... <a href="javascript:window.history.back();">Go back</a> or
 </div>
 
 <script>
-(function(){
+if((function(){
 var u=location.href.split("://");u.splice(0,1);
 u=u.join('').split('/');u.splice(0,1);u.join('');u=decodeURI(u);
 var dby=document.body;
@@ -60,7 +60,7 @@ location.href=url;
 return !!1;
 }
 
-})()
+})()){document.title="Loading..."}
 </script>
 
 </body>
