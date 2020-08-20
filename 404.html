@@ -49,8 +49,7 @@ u = (u.indexOf('://')==4||u.indexOf('://')==5) ? (function(){
   u=u.split("://");u.splice(0,1);return u.join('://');
 })() : u ;
 u=u.split('/');u.splice(0,1);u=u.join('/');
-u=decodeURI(u);
-var dby=document.body;
+u=decodeURIComponent(u);var dby=document.body;
 if(u.indexOf('p/')==0){
 let url="https://shc7432.github.io/"+u.replace('p/','');
 dby.innerHTML="Please wait...";
