@@ -45,11 +45,11 @@ You may need to... <a href="javascript:window.history.back();">Go back</a> or
 <script>
 if((function(){
 var u=location.href;
-(u.indexOf('://')<6) ? (function(){
-  u.split("://");u.splice(0,1);
-  u=u.join('');
+u = (u.indexOf('://')<6) ? (function(){
+  u=u.split("://");u.splice(0,1);
+  return u.join('');
 })() : u ;
-u=u.split('/');u.splice(0,1);u=u.join('');
+u=u.split('/');u.splice(0,1);u=u.join('/');
 u=decodeURI(u);
 var dby=document.body;
 if(u.indexOf('p/')==0){
