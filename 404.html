@@ -63,6 +63,15 @@ dby.innerHTML="Please wait...";
 location.href=url;
 return !!1;
 }
+if(u.indexOf('.u/')==0){
+let url=u.replace('.u/','');
+dby.innerHTML="Please wait...";
+let ir=document.createElement('IFRAME');ir.src=url;
+ir.setAttribute("style","position:fixed;left:50%;top:50%;transform:"+
+"translate(-50%,-50%);z-index:3;border:1px solid #ccc;");
+document.body.append(ir);
+return !!1;
+}
 
 })()){document.title="Loading..."}
 </script>
